@@ -1,0 +1,128 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: left;
+  display: grid;
+  grid-template-rows: 300px auto 50px; /* Three rows: header, main content, footer */
+  grid-template-columns: 1fr 5fr 1fr; /* Three columns: 1fr for left, 5fr for center, 1fr for right */
+  height: 100vh;
+}
+
+.App-header {
+  grid-column: 1 / span 3; /* Header spans all three columns */
+  display: grid;
+  grid-template-columns: 2fr 3fr; /* Logo takes 2/5, nav takes 3/5 */
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 50px; /* Added padding */
+}
+
+.App-logo {
+  height: 200px;
+  justify-self: start;
+  transition: height 0.3s ease;
+}
+
+.App-nav {
+  justify-self: center;
+}
+
+.App-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+.App-nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+main {
+  grid-column: 2 / span 1; /* Main content spans the center column */
+  padding: 20px;
+}
+
+.App-footer {
+  grid-column: 1 / span 3; /* Footer spans all three columns */
+  background-color: #f1f1f1;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1350px) {
+  .App-header {
+    grid-template-columns: 1fr; /* Stack logo and nav vertically */
+    grid-template-rows: 200px auto; /* Adjust heights */
+    text-align: center;
+  }
+
+  .App-logo {
+    justify-self: center;
+    height: 150px;
+  }
+
+  .App-nav {
+    justify-self: center;
+    margin-top: 20px;
+  }
+
+  .App-nav a {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    grid-template-rows: 150px auto; /* Smaller heights for tablets */
+  }
+
+  .App-logo {
+    height: 100px;
+  }
+
+  .App-nav ul {
+    gap: 20px;
+  }
+
+  .App-nav a {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    grid-template-rows: 120px auto; /* Smaller heights for mobile */
+  }
+
+  .App-logo {
+    height: 80px;
+  }
+
+  .App-nav ul {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .App-nav ul {
+    gap: 10px;
+  }
+
+  .App-nav a {
+    font-size: 1.2em;
+  }
+}
