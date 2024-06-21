@@ -16,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -24,11 +26,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "http://whitemonkeypublishing.github.io/{repo-name}",
-    "scripts": {
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d build"
-    },
+  "homepage": "http://dankla90.github.io/WhiteMonekeyProductionsWebsite",
   "browserslist": {
     "production": [
       ">0.2%",
