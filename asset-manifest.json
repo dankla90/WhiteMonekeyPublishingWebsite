@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/WhiteMonekeyPublishingWebsite/static/css/main.7616329b.css",
-    "main.js": "/WhiteMonekeyPublishingWebsite/static/js/main.38681760.js",
+    "main.js": "/WhiteMonekeyPublishingWebsite/static/js/main.2c653b5f.js",
     "static/media/logo.jpg": "/WhiteMonekeyPublishingWebsite/static/media/logo.15c4d97a6a5207d769d5.jpg",
     "index.html": "/WhiteMonekeyPublishingWebsite/index.html",
     "main.7616329b.css.map": "/WhiteMonekeyPublishingWebsite/static/css/main.7616329b.css.map",
-    "main.38681760.js.map": "/WhiteMonekeyPublishingWebsite/static/js/main.38681760.js.map"
+    "main.2c653b5f.js.map": "/WhiteMonekeyPublishingWebsite/static/js/main.2c653b5f.js.map"
   },
   "entrypoints": [
     "static/css/main.7616329b.css",
-    "static/js/main.38681760.js"
+    "static/js/main.2c653b5f.js"
   ]
 }
