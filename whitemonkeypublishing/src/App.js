@@ -11,8 +11,8 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <link red="icon" href='/whitemonkeypublishing/public/favicon.ico' />
         <header className="App-header">
-          <link rel="icon" type="image/x-icon" href="favicon.jpg" />
           <Link to="/">
             <img src={logo} className="App-logo" alt="logo" />
           </Link>

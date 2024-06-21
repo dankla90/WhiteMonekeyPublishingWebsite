@@ -4,40 +4,37 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
+header, main, footer {
+  flex-shrink: 0;
+}
 .App {
   text-align: left;
-  display: grid;
-  grid-template-rows: 300px auto 50px; /* Three rows: header, main content, footer */
-  grid-template-columns: 1fr 5fr 1fr; /* Three columns: 1fr for left, 5fr for center, 1fr for right */
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 }
 
 .App-header {
-  grid-column: 1 / span 3; /* Header spans all three columns */
-  display: grid;
-  grid-template-columns: 2fr 3fr; /* Logo takes 2/5, nav takes 3/5 */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-bottom: 1px solid #ccc;
-  padding: 10px 50px; /* Added padding */
+  padding: 10px 20px;
+  padding-right: 40px;
 }
 
 .App-logo {
-  height: 200px;
-  justify-self: start;
+  height: 210px;
   transition: height 0.3s ease;
-}
-
-.App-nav {
-  justify-self: center;
 }
 
 .App-nav ul {
   list-style: none;
   display: flex;
   gap: 80px;
-  padding: 0;
+  padding-right: 150px;
+  transition: padding-right 0.5 ease;
   margin: 0;
 }
 
@@ -49,46 +46,170 @@ body {
 }
 
 main {
-  grid-column: 2 / span 1; /* Main content spans the center column */
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
 
+main img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .App-footer {
-  grid-column: 1 / span 3; /* Footer spans all three columns */
   background-color: #f1f1f1;
   border-top: 1px solid #ccc;
   padding: 10px;
   font-size: 0.9em;
   color: #555;
   text-align: center;
+  flex-shrink: 0;    
+  margin-top: auto;
 }
 
+/* Styles specific to the "Home" page */
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+
+.home .images img {
+  flex: 1; /* Allow images to grow and shrink */
+  max-width: 48%; /* Ensure images are not too large */
+  height: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.home .text {
+  text-align: left;
+}
+
+.home .text h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.home .text p {
+  margin-bottom: 10px;
+}
+
+/* Styles specific to the "About" page */
+.about {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto; /* Added margin for the About page */
+  max-width: 1200px;
+}
+
+.about-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.about-text {
+  margin-bottom: 20px;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Styles specific to the "Author" page */
+.author {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.author .images {
+  flex: 1;
+  text-align: center;
+}
+
+.author .images img {
+  width: 100%;
+  max-width: 300px; /* Ensure image is not too large */
+  height: auto;
+}
+
+.author .text {
+  flex: 2;
+  font-size: 1.1em; /* Slightly larger text for the Author page */
+}
+
+.author .text h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.author .text p {
+  margin-bottom: 10px;
+}
+
+/* Styles specific to the "Books" page */
+.books {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  row-gap: 50px;
+}
+
+
+
+
 /* Responsive adjustments */
-@media (max-width: 1350px) {
+@media (max-width: 1300px) {
   .App-header {
-    grid-template-columns: 1fr; /* Stack logo and nav vertically */
-    grid-template-rows: 200px auto; /* Adjust heights */
+    flex-direction: column;
     text-align: center;
   }
 
   .App-logo {
-    justify-self: center;
     height: 150px;
   }
 
-  .App-nav {
-    justify-self: center;
-    margin-top: 20px;
+  .App-nav ul {
+    gap: 20px;
+    padding-right: 0;
   }
 
   .App-nav a {
     font-size: 2em;
   }
+
+  .author,
+  .home,
+  .books {
+    flex-direction: column; /* Stack vertically on smaller screens */
+  }
+
+  .books .images-text {
+    flex-direction: column; /* Stack images and text vertically on smaller screens */
+  }
 }
 
 @media (max-width: 768px) {
   .App-header {
-    grid-template-rows: 150px auto; /* Smaller heights for tablets */
+    flex-direction: column;
   }
 
   .App-logo {
@@ -96,17 +217,31 @@ main {
   }
 
   .App-nav ul {
-    gap: 20px;
+    gap: 10px;
   }
 
   .App-nav a {
     font-size: 1.5em;
   }
+
+  .author,
+  .home,
+  .books {
+    flex-direction: column; /* Stack vertically on smaller screens */
+  }
+
+  .books .images-text {
+    flex-direction: column; /* Stack images and text vertically on smaller screens */
+  }
+
+  .home .images img {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
   .App-header {
-    grid-template-rows: 120px auto; /* Smaller heights for mobile */
+    flex-direction: column;
   }
 
   .App-logo {
@@ -115,14 +250,24 @@ main {
 
   .App-nav ul {
     flex-direction: column;
-    gap: 30px;
-  }
-
-  .App-nav ul {
     gap: 10px;
   }
 
   .App-nav a {
     font-size: 1.2em;
+  }
+
+  .author,
+  .home,
+  .books {
+    flex-direction: column; /* Stack vertically on smaller screens */
+  }
+
+  .books .images-text {
+    flex-direction: column; /* Stack images and text vertically on smaller screens */
+  }
+
+  .home .images img {
+    max-width: 100%;
   }
 }

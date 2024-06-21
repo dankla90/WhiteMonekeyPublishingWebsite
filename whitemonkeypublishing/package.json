@@ -24,6 +24,11 @@
       "react-app/jest"
     ]
   },
+  "homepage": "http://whitemonkeypublishing.github.io/{repo-name}",
+    "scripts": {
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    },
   "browserslist": {
     "production": [
       ">0.2%",
