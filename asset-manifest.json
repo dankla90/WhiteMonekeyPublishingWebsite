@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/WhiteMonekeyProductionsWebsite/static/css/main.7616329b.css",
-    "main.js": "/WhiteMonekeyProductionsWebsite/static/js/main.fe036ff8.js",
-    "static/js/453.9370b8ab.chunk.js": "/WhiteMonekeyProductionsWebsite/static/js/453.9370b8ab.chunk.js",
-    "static/media/logo.jpg": "/WhiteMonekeyProductionsWebsite/static/media/logo.15c4d97a6a5207d769d5.jpg",
-    "index.html": "/WhiteMonekeyProductionsWebsite/index.html",
-    "main.7616329b.css.map": "/WhiteMonekeyProductionsWebsite/static/css/main.7616329b.css.map",
-    "main.fe036ff8.js.map": "/WhiteMonekeyProductionsWebsite/static/js/main.fe036ff8.js.map",
-    "453.9370b8ab.chunk.js.map": "/WhiteMonekeyProductionsWebsite/static/js/453.9370b8ab.chunk.js.map"
+    "main.css": "/WhiteMonekeyPublishingWebsite/static/css/main.7616329b.css",
+    "main.js": "/WhiteMonekeyPublishingWebsite/static/js/main.290c202b.js",
+    "static/js/453.9370b8ab.chunk.js": "/WhiteMonekeyPublishingWebsite/static/js/453.9370b8ab.chunk.js",
+    "static/media/logo.jpg": "/WhiteMonekeyPublishingWebsite/static/media/logo.15c4d97a6a5207d769d5.jpg",
+    "index.html": "/WhiteMonekeyPublishingWebsite/index.html",
+    "main.7616329b.css.map": "/WhiteMonekeyPublishingWebsite/static/css/main.7616329b.css.map",
+    "main.290c202b.js.map": "/WhiteMonekeyPublishingWebsite/static/js/main.290c202b.js.map",
+    "453.9370b8ab.chunk.js.map": "/WhiteMonekeyPublishingWebsite/static/js/453.9370b8ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7616329b.css",
-    "static/js/main.fe036ff8.js"
+    "static/js/main.290c202b.js"
   ]
 }
