@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import logo from './logo.jpg'; // Make sure to place your logo in the src folder
+import logo from './logo.jpg';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Books from './pages/Books';
@@ -12,6 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
+          <link rel="icon" type="image/x-icon" href="favicon.jpg" />
           <Link to="/">
             <img src={logo} className="App-logo" alt="logo" />
           </Link>
