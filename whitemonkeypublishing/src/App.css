@@ -38,6 +38,11 @@ header, main, footer {
   margin: 0;
 }
 
+.App-nav ul li {
+  flex: 1; /* Ensure each item takes equal space */
+  text-align: center;
+}
+
 .App-nav a {
   text-decoration: none;
   color: black;
@@ -79,12 +84,10 @@ main img {
   gap: 20px;
 }
 
-
 .home .images img {
   flex: 1; /* Allow images to grow and shrink */
   max-width: 48%; /* Ensure images are not too large */
-  height: 100%;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -168,13 +171,23 @@ main img {
   margin: 0 auto;
   max-width: 1200px;
   gap: 20px;
-  flex-wrap: wrap;
   align-items: stretch;
   row-gap: 50px;
+  font-size: 1.1em;
 }
 
-
-
+.books2 {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  gap: 20px;
+  align-items: stretch;
+  row-gap: 50px;
+  font-size: 1.1em;
+}
 
 /* Responsive adjustments */
 @media (max-width: 1300px) {
@@ -198,7 +211,8 @@ main img {
 
   .author,
   .home,
-  .books {
+  .books,
+  .books2 {
     flex-direction: column; /* Stack vertically on smaller screens */
   }
 
@@ -249,8 +263,13 @@ main img {
   }
 
   .App-nav ul {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
+  }
+
+  .App-nav ul li {
+    flex: 1 1 calc(50% - 10px); /* Ensures 2 items per row */
+    box-sizing: border-box;
   }
 
   .App-nav a {

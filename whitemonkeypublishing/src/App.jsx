@@ -33,7 +33,7 @@ function App() {
           </Routes>
         </main>
         <footer className="App-footer">
-          White Monkey Publishing all rights reserved 2024. Contact <a href="mailto:wmp@whitemonkey.com">wmp@whitemonkey.com</a> for license quotes for your school or district.
+          White Monkey  Publishing is a subdivision of Klausen Blog-info Enterprises. Registered in Norway, organization number: 925789704.  All rights reserved 2024. Contact  <a href="mailto:wmp@whitemonkey.com">wmp@whitemonkey.com</a> for a license quote for your school or district. 
         </footer>
       </div>
   );
