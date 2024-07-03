@@ -34,7 +34,7 @@ function App() {
         </main>
         <footer className="App-footer">
           White Monkey  Publishing is a subdivision of Klausen Blog-info Enterprises. Registered in Norway, organization number: 925789704. 
-           All rights reserved 2024. Contact  <a href="mailto:wpm@whitemonkeypublishing.com">wmp@whitemonkeypublishing.com</a> for a license quote for your school or district. 
+           All rights reserved 2024. Contact  <a href="mailto:wmp@whitemonkeypublishing.com"> wmp@whitemonkeypublishing.com</a>           for a license quote for your school or district. 
         </footer>
       </div>
   );
