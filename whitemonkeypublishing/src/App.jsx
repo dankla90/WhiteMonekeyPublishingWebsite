@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, } from 'react-router-dom';
 import './App.css';
-import logo from './logo.jpg';
+import logo from './logo.png';
 import Home from './pages/Home'; // Adjust import paths as per your project structure
 import Books from './pages/Books';
 import Author from './pages/Author';
@@ -33,7 +33,8 @@ function App() {
           </Routes>
         </main>
         <footer className="App-footer">
-          White Monkey  Publishing is a subdivision of Klausen Blog-info Enterprises. Registered in Norway, organization number: 925789704.  All rights reserved 2024. Contact  <a href="mailto:wmp@whitemonkey.com">wmp@whitemonkey.com</a> for a license quote for your school or district. 
+          White Monkey  Publishing is a subdivision of Klausen Blog-info Enterprises. Registered in Norway, organization number: 925789704. 
+           All rights reserved 2024. Contact  <a href="mailto:wpm@whitemonkeypublishing.com">wmp@whitemonkeypublishing.com</a> for a license quote for your school or district. 
         </footer>
       </div>
   );
